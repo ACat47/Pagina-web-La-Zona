@@ -1,0 +1,645 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*REDES */
+  .redes {
+    display: flex;
+    text-align: right;
+    color: #fff;
+    /*
+    background-color: #1d242db6;
+    */
+    background-color: #445a67;
+    padding: 1px;
+    font-weight: 200;
+    font-size: 13px;
+  }
+
+  .redes img {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .redes a {
+    color: #e2e2e2;
+    text-decoration: none;
+  }
+  .redes a:hover {
+    color: #06f154;
+  }
+
+  /*CUERPO DE PAGINA */
+
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    font-family: "Roboto",Arial, sans-serif;
+    line-height: 1.6;
+    /*
+    background-color: #f4f4f4;
+    */
+    background-color: #f6f7fb;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eef1fa;
+    color: #fff;
+  }
+  
+  header h1 {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    /*
+    color: #5db874;
+    */
+    color: #50B4D8;
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Menú de navegación */
+  nav ul {
+    font-weight: 800;
+
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    /*
+    background-color: #1d242dd5;
+    */
+    background-color: #57838D;
+    padding: 0.5rem;
+  }
+  
+  nav ul li {
+    margin: 0 1.1rem;
+    transition: transform 0.5s ease;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s ease;
+  }
+  
+  nav ul li:hover {
+    transform: scale(1.3);
+  }
+  
+  nav ul li a:hover {
+    /*
+    color: #b7eaf7;
+    */
+    color: #6fe9ff;
+  }
+  
+  /*Estilo de categorias */
+  .style-categories h2{
+    text-align: left;
+    font-size: 1em;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 15px;
+    color: #ffffff;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.205);
+    background-color: #333;
+
+  }
+
+
+  /* Slider de productos destacados */
+  #destacados {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .slider-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .slide {
+    flex: 0 0 250px; /* Ancho del contenedor de cada imagen destacada */
+    text-align: center;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .categoria {
+    margin-bottom: 1.5rem;
+  }
+
+  .featured-product a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .featured-product img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .featured-product:hover {
+    transform: scale(1.02)
+  }
+
+  .featured-product h3 {
+    font-weight: 300;
+    font-size: 2.2vw;
+    color: #445a67;
+    font-style: normal;
+    text-shadow: 0px 0px 18px #72727265;
+  }
+  
+  .featured-product p {
+    font-weight: 250;
+    font-size: 1.8vw;
+    font-size: auto;
+    font-style: normal;
+    text-shadow: 0px 0px 24px #00000086;
+  }
+
+  .featured-product a {
+    font-size: 2vw;
+  }
+
+  .featured-product a:hover {
+    color: #007bff;
+  }
+
+
+ /*CARRUSEL DE PRODUCTOS */
+
+ .featured-products {
+    text-align: center;
+    margin: 30px 0;
+    padding-bottom: 50px;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;; /* Ajusta el ancho máximo del carrusel */
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+  }
+  
+  .featured-product {
+    min-width: 100%; /* Muestra solo un producto a la vez */
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #e3e7f5;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: 250;
+    font-style: normal;
+    transition: transform 0.2s ease;
+  }
+  
+  .carousel-arrow {
+    position: absolute; /* Cambia de absolute a fixed para anclar en los bordes de la página */
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 10;
+  }
+  
+  .left-arrow {
+    left: 10px; /* Coloca la flecha izquierda en el borde izquierdo de la pantalla */
+  }
+  
+  .right-arrow {
+    right: 10px; /* Coloca la flecha derecha en el borde derecho de la pantalla */
+  }
+
+  /* Productos de alquiler */
+
+  .rental-products {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 80px;
+  }
+
+  .individual-products {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en otra fila si no caben */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 30px;
+    overflow: hidden; /* Oculta la barra de desplazamiento */ 
+  }
+
+  .individual-product {
+    flex: 1 1 200px; /* Los elementos ocupan espacio pero se ajustan */
+    max-width: 300px; /* Ancho máximo para cada elemento */
+    margin: 10px; /* Espacio entre elementos */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .individual-product a {
+    color: #333;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .individual-product a:hover {
+    color: #007bff;
+  }
+
+
+  .rounded-circle-img {
+    width: 230px;
+    height: 230px;
+    border-radius: 120px
+    
+  }
+
+  .individual-product:hover {
+    transform: scale(1.2);
+  }
+
+  /* Ajuste para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column; /* Cambia a disposición vertical */
+    }
+  }
+
+
+  /* TIENDA DE ROPA */
+
+
+  .clothing-store {
+    background-color: #f6f7fb;
+    padding: 1rem;
+  }
+
+  .clothing-store img{
+    max-width: 50%;
+    margin-left: 26%;
+    max-height: auto;
+    box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.226);
+  }
+
+  /* Categorías */
+  #categorias {
+    padding: 1rem;
+  }
+  
+
+  /*-------------CATEGORIA 1 HELADOS-------------*/
+
+  .categoria {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .categoria h3 {
+    text-align: center;
+    padding: 0.5rem 0;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 28px;
+    color: #44b4dd;;
+    text-shadow: 0px 0px 12px rgba(34, 34, 34, 0.18);
+    background-color: #eceef7;
+    border-left: 5px solid #333;
+    border-right: 5px solid #333;
+    padding-left: 1rem;
+    box-shadow: 0px 0px 22px rgba(0, 86, 107, 0.28);
+  }
+  
+  .categoria h4 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 10px;
+
+  }
+  
+  /*Scroll de productos 1(helados) */
+  .productos-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  
+  /*
+  .producto h4, .price {
+    display: inline;
+  }
+  */
+
+  .producto {
+    flex: 0 0 280px; /* Tamaño del contenedor de cada producto */
+    text-align: center;
+
+    background-color: #fff;
+    padding: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+
+  .producto:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .price {
+    text-align: right;
+    padding-right: auto;
+    opacity: 70%;
+  }
+
+  .producto img {
+    width: 100%;
+    height: auto;
+
+  }
+  
+  /*
+  .producto p {
+    margin: 0.5rem 0;
+  }
+  */
+
+  .producto a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .contacto {
+    margin-top: 10px;
+  }
+
+  
+  .producto a:hover {
+    color: #007bff;
+  }
+  
+  /*-------------CATEGORIA 2 PAPELERIA-------------*/
+
+  .categoria2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .categoria2 h3 {
+    text-align: center;
+    padding: 0.5rem 0;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 28px;
+    color: #44b4dd;
+    text-shadow: 0px 0px 12px rgba(34, 34, 34, 0.18);
+    background-color: #eceef7;
+    border-left: 5px solid #333;
+    border-right: 5px solid #333;
+    padding-left: 1rem;
+    box-shadow: 0px 0px 22px rgba(0, 86, 107, 0.28);
+  }
+  
+  .categoria2 h4 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+
+  }
+  
+  /*Scroll de productos 2(Papeleria) */
+  .productos-scroll2 {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  /*
+  .producto2 h4, .price2 {
+    display: inline;
+  }
+  */
+
+  .producto2 {
+    flex: 0 0 280px; /* Tamaño del contenedor de cada producto */
+    text-align: center;
+    background-color: #fff;
+    padding: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .producto2:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .price2 {
+    text-align: right;
+    padding-right: auto;
+    opacity: 70%;
+  }
+
+  .producto2 img {
+    width: 100%;
+    height: auto;
+
+  }
+  /*
+  .producto2 p {
+    margin: 0.5rem 0;
+  }
+  */
+  
+  .producto2 a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .producto2 a:hover {
+    color: #007bff;
+  }
+
+  /* Información de contacto */
+  #contacto {
+    padding: 1rem;
+    text-align: center;
+    background-color: #354955;
+    color: #fff;
+  }
+  
+  /*SLIDER CONTAINER 1 HElADOS */
+  .slider-container.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+  .slider-container {
+    cursor: grab;
+    cursor: -webkit-grab;
+  }
+
+  /*SLIDER CONTAINER 2 PAPELERIA */
+
+  .slider-container2.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+  .slider-container2 {
+    cursor: grab;
+    cursor: -webkit-grab;
+  }
+
+
+  /* ----------Funcionamiento de Slider de productos 1 HELADOS----------*/
+
+  .productos-scroll.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+  
+  .productos-scroll {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+ 
+  .productos-scroll img {
+    pointer-events: none
+  }
+
+/* ----------Funcionamiento de Slider de productos 1 HELADOS----------*/
+  
+  .productos-scroll.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+  
+  .productos-scroll {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+ 
+  .productos-scroll img {
+    pointer-events: none
+  }
+
+/* ----------Funcionamiento de Slider de productos 2 PAPELERIA----------*/
+  
+  .productos-scroll2.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+
+  .productos-scroll2 {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .productos-scroll2 img {
+    pointer-events: none
+  }
+
+  /* TEXTO DE CONTACTO */
+
+  .contact-text {
+    display: flex; /* Convertimos el contenedor en un contenedor flex */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+  }
+
+  .contact-text h1 {
+    text-align: left;
+
+    color: #3faee2;
+  }
+  
+  .contact-text h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 0 1 auto;
+  }
+
+  .contact-text-p {
+    padding-left: 110px;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .contact-text-p a {
+    color: #50B4D8;
+    text-decoration: none;
+    font-style:italic;
+  }
+
+  .contact-text-p a:hover {
+    color: #007bff;
+  }
+
+
+
+  /*
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 10;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+ */

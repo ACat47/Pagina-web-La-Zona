@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Zona</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!--FUENTES-->
+
+  <!--ROBOTO-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!--ANTON-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!--ABEL-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="redes">
+    <a id="link" href="https://www.instagram.com/mundoidealmg"></a><a href="https://www.instagram.com/mundoidealmg"><img id="link" src="images/instagram.png" alt="Logo-instagram"></a>
+  </div>
+  
+
+  <!-- Título de la tienda -->
+  <header>
+    <hr>
+    <h1>LA ZONA</h1>
+    <hr>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <ul>
+      <li><a href="#destacados">Destacados</a></li>
+      <li><a href="#categorias">Categorías</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Carrusel de productos destacados -->
+  <section class="featured-products" id="destacados">
+    <h2>Destacados</h2>
+    <div class="carousel-container">
+      <button class="carousel-arrow left-arrow">&#10094;</button> <!-- Flecha Izquierda -->
+      <div class="carousel-track">
+        <div class="featured-product"> <!--FEATURED-PRODUCT ES UN PRODUCTO INDIVIDUAL (NO CONFUNDIR CON FEATURED-PRODUCTS en plurar de arriba)-->
+          <a href="#categorias">
+            <img src="images/Consolas.png" alt="destacado1"> 
+            <h3>Alquiler de Consolas</h3>
+          </a>
+          <p>Tenemos Playstation 5, Playstation 4 y Nintendo Switch.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="featured-product"> <!--FEATURED-PRODUCT ES UN PRODUCTO INDIVIDUAL (NO CONFUNDIR CON FEATURED-PRODUCTS en plurar de arriba)-->
+          <a href="#categorias">
+            <img src="images/Helados Cali.png" alt="destacado2"> 
+            <h3>Helados Cali</h3>
+          </a>
+          <p>Tenemos una gran variedad de helados cali para todos los gustos</p>
+          <a href="#contacto"> Contactar</a>
+        </div>
+        <div class="featured-product"> <!--FEATURED-PRODUCT ES UN PRODUCTO INDIVIDUAL (NO CONFUNDIR CON FEATURED-PRODUCTS en plurar de arriba)-->
+          <a href="#categorias">
+            <img src="images/Helados Papa Helado.png" alt="destacado3"> 
+            <h3>Papá Helados</h3>
+          </a>
+          <p>Papá Helados de todos los sabores para todos los paladares</p>
+          <a href="#contacto"> Contactar</a>
+        </div>
+        <div class="featured-product"> <!--FEATURED-PRODUCT ES UN PRODUCTO INDIVIDUAL (NO CONFUNDIR CON FEATURED-PRODUCTS en plurar de arriba)-->
+          <a href="#categorias">
+            <img src="images/Papeleria.png" alt="destacado4"> 
+            <h3>Papelería</h3>
+          </a>
+          <p>Todo lo que necesitas para tu oficina en un solo lugar.</p>
+          <a href="#contacto"> Contactar</a>
+        </div>
+        <!--NO AÑADIR MAS DE 4 PRODUCTOS PORQUE SE DESCONTROLA ESTA COSA, 4 ESTA BIEN xd-->
+      </div>
+      <button class="carousel-arrow right-arrow">&#10095;</button> <!-- Flecha Derecha -->
+    </div>
+  </section>
+
+
+  <!-- Categorías de productos -->
+  <section id="categorias">
+    <div class="style-categories">
+      <h2>Categorías</h2>
+      <hr>
+    </div>
+
+    <!-- Productos de alquiler -->
+    <div class="rental-products">
+      <div class="tittle">
+        <h2>Servicio de alquiler de consolas</h2>
+        <p>
+          ¡Tenemos la consola que buscas! Alquila ahora y juega sin límites.
+        </p>
+      </div>
+      <div class="individual-products">
+        <div class="individual-product"> <!-- PRODUCTO INDIVIDUAL -->
+          <a href="#contacto"><img src="images/PS5.jpg" class="rounded-circle-img"></a>
+          <h5>Playstation 5</h5>
+          <a href="#contacto"> Contactar</a>
+        </div>
+        <div class="individual-product"> <!-- PRODUCTO INDIVIDUAL -->
+          <a href="#contacto"><img src="images/PS4.jpg" class="rounded-circle-img"></a>
+          <h5>Playstation 4</h5>
+          <a href="#contacto"> Contactar</a>
+        </div>
+        <div class="individual-product"> <!-- PRODUCTO INDIVIDUAL -->
+          <a href="#contacto"><img src="images/Nintendo-Switch.jpg" class="rounded-circle-img"></a>
+          <h5>Nintendo Switch</h5>
+          <a href="#contacto"> Contactar</a>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Categoría 1 (HELADOS)-->
+    <div class="categoria">
+      <h3>Helados para todos los gustos</h3>
+      <div class="productos-scroll">
+        <div class="producto">
+          <img src="images/Mausi.jpg" alt="Producto 1">
+          <p class="price">0.65$</p><h4>Mausi</h4> 
+          <p>Helado cremoso con sabor a mantecado y chocolate y cubierta de chocolate “mausi”.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/Peppa-helado.jpg" alt="Producto 2">
+          <p class="price">0.65$</p> <h4>Peppa</h4> 
+          <p>Helado cremoso sabor a fresa con cobertura de chocolate</p>
+          <br>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/choco-mantecado.jpg" alt="Producto 3">
+          <p class="price">0.65$</p> <h4>Choco Mantecado</h4> 
+          <p>Helado cremoso sabor a mantecado con cobertura de chocolate.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/Choco-mani.jpg" alt="Producto 4">
+          <p class="price">0.65$</p> <h4>Choco Mani</h4> 
+          <p>Helado cremoso sabor a vainilla relleno de arequipe con cubierta de chocolate y maní.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/max-polet.jpg" alt="Producto 5">
+          <p class="price">0.92$</p> <h4>Max Polet</h4> 
+          <p>Helado Cremoso con Sabor a Chocolate y Vainilla y Cubierta de Chocolate y Arroz Crocante.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/donut-helado.jpg" alt="Producto 6">
+          <p class="price">0.75$</p> <h4>Donut Sorpresa</h4> 
+          <p>Helado cremoso sabor a mantecado con cubierta de chocolate y chispas de chocolate.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/fres.jpg" alt="Producto 7">
+          <p class="price">0.34$</p> <h4>Fres</h4>
+          <p>Helados de Agua Sabor a Uva “Fres” y a Fresa.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/Wonder.jpg" alt="Producto 8">
+          <p class="price">0.65$</p> <h4>Wonder</h4>
+          <p>Helado cremoso sabor a fresa, relleno de leche condensada y cubierto de chocolate de leche.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/tentacion.jpg" alt="Producto 9">
+          <p class="price">0.43$</p> <h4>Tentacion</h4> 
+          <p>Helado semicremoso sabor a vainilla con cubierta de pulpa de parchita.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/casero.jpg" alt="Producto 10">
+          <p class="price">0.43$</p> <h4>Casero</h4> 
+          <p>Helado semicremoso sabor a Guanábana con pulpa de Guanábana «casero».</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/tinitas.jpg" alt="Producto 11">
+          <p class="price">0.58$</p> <h4>Tinitas</h4> 
+          <p>Helados cremosos con distintos sabores: vainilla, mantecado, chocolate con sirop de chocolate”.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/supercono.jpg" alt="Producto 12">
+          <p class="price">0.77$</p> <h4>Super Cono</h4> 
+          <p>Barquilla Rellena de Helado Cremoso Sabor a Vainilla o Chocolate.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/choco-morocho.jpg" alt="Producto 13">
+          <p class="price">0.45$</p> <h4>Choco Morocho</h4> 
+          <p>Helado Cremoso de Chocolate.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/cono-chicle.jpg" alt="Producto 14">
+          <p class="price">0.58$</p> <h4>Cono Chicle</h4> 
+          <p>Helado semicremoso sabor a uva con chicle.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/1litro.jpg" alt="Producto 15">
+          <p class="price">3.00$</p> <h4>1 Litro</h4> 
+          <p>Helado cremoso sabor a chocolate con sirop de chocolate, tiramisú con trocitos de galleta o a fresa con sirop de fresa.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/maxi-sandwich.jpg" alt="Producto 16">
+          <p class="price">0.75$</p> <h4>Maxi Sandwich</h4>  
+          <p>Helados Cremosos con sabores a Vainilla, Fresa y Vainilla, Mantecado con Galleta de Chocolate.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/trisabor.jpg" alt="Producto 17">
+          <p class="price">4.8$</p> <h4>Trisabor</h4> 
+          <p>Helado Cremoso Sabor a Chocolate, Mantecado y Fresa.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/polet-belga.jpg" alt="Producto 18">
+          <p class="price">1.15$</p> <h4>Polet Chocolate Belga</h4> 
+          <p>Helado cremoso de chocolate con uvas pasas y sabor a ron con cubierta de chocolate con sabor a ron y trozos de pasas.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/choco-bits.jpg" alt="Producto 19">
+          <p class="price">0.65$</p> <h4>Choco Bits</h4> 
+          <p>Helado cremoso sabor a vainilla relleno con barra de chocolate, cobertura de chocolate blanco y trozos de galleta de vainilla.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/polet-ferrero-rocher.png" alt="Producto 20">
+          <p class="price">1.15$</p> <h4>Polet Avellana</h4> 
+          <p>Helado cremoso sabor a avellana con sirope de chocolate y cubierta de chocolate y chocolate blanco con trocitos de avellanas.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/polet-white.jpg" alt="Producto 21">
+          <p class="price">1.15$</p> <h4>Polet Crunch White</h4> 
+          <p>Helado cremoso sabor a vainilla con sirope de frutos rojos y cubierta de chocolate blanco con trozos de galleta de chocolate.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <div class="producto">
+          <img src="images/donut-helado.jpg" alt="Producto 22">
+          <p class="price">0.75$</p> <h4>Donut Sorpresa</h4> 
+          <p>Helado cremoso sabor a mantecado con cubierta de chocolate y chispas de chocolate.</p>
+          <a href="#contacto"><p class="contacto">Contactar</p></a>
+        </div>
+        <!-- Más productos en la categoría 1 -->
+      </div>
+    </div>
+
+
+
+    <!-- Categoría 2 (PAPELERIA) -->
+    <div class="categoria2">
+      <h3>Tienda de papelería</h3>
+      <div class="productos-scroll2">
+        <div class="producto2">
+          <img src="images/silicon grande.jpg" alt="Producto 1">
+          <p class="price2">40Bs</p> <h4>Silicón liquido Grande</h4> 
+          <p>Con nuestro silicón líquido grande, podrás crear figuras y manualidades increíbles.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/silicon pequeño.jpg" alt="Producto 2">
+          <p class="price2">25Bs</p> <h4>Silicón Liquido Pequeño</h4> 
+          <p>Con nuestro silicón líquido pequeño, podrás crear figuras y manualidades increíbles.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/Colores-de-12.jpeg" alt="Producto 3">
+          <p class="price2">30bs</p> <h4>Colores de 12</h4> 
+          <p>¡Un arcoíris de colores en tus manos! Con nuestro estuche de 12 colores, podrás crear obras de arte llenas de vida.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/pintura al frio.jpeg" alt="Producto 4">
+          <p class="price2">30Bs</p> <h4>Pintura al frío</h4> 
+          <p>¡Manos a la obra! Con nuestra pintura al frío, podrás decorar todo lo que quieras, desde camisetas hasta cajas.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/tijeras normal.jpg" alt="Producto 5">
+          <p class="price2">40Bs</p> <h4>Tijeras</h4> 
+          <p>¡Corte preciso y divertido! Nuestras tijeras son ideales para proyectos escolares y manualidades.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/tijeras zig zag.jpg" alt="Producto 6">
+          <p class="price2">45Bs</p> <h4>Tijeras Zig Zag</h4> 
+          <p>¡Dale forma divertida a tus cortes! Nuestras tijeras zig zag son ideales para tus manualidades.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/Borrador.jpg" alt="Producto 7">
+          <p class="price2">10Bs</p> <h4>Borradores</h4> 
+          <p>Con nuestro silicón líquido pequeño, podrás crear figuras y manualidades increíbles.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/marcadores.jpeg" alt="Producto 8">
+          <p class="price2">15Bs</p> <h4>Marcadores</h4> 
+          <p>¡Resalta lo importante! Nuestros marcadores son perfectos para estudiar, trabajar y tomar notas.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/Sacapuntas.jpg" alt="Producto 9">
+          <p class="price2">10Bs</p> <h4>Sacapuntas</h4> 
+          <p>¡Siempre a punto! Con nuestro sacapuntas, tus lápices estarán siempre listos para escribir.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/Foami.jpeg" alt="Producto 10">
+          <p class="price2">20Bs</p> <h4>Foami</h4> 
+          <p>¡La magia del foami! Crea figuras 3D, adornos y mucho más con nuestro foami de colores.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/carpeta.jpg" alt="Producto 11">
+          <p class="price2">20Bs</p> <h4>Carpeta</h4> 
+          <p>¡Organiza tus documentos! Nuestras carpetas te ayudarán a mantener tus papeles ordenados.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/silicon pequeño.jpg" alt="Producto 12">
+          <p class="price2">25Bs</p> <h4>Silicón Liquido Pequeño</h4> 
+          <p>Con nuestro silicón líquido pequeño, podrás crear figuras y manualidades increíbles.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/Sobres.png" alt="Producto 13">
+          <p class="price2">12Bs</p> <h4>Sobres</h4> 
+          <p>¡Envía tus mensajes con estilo! Nuestros sobres son perfectos para cualquier ocasión.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/Fundas-protectoras.png" alt="Producto 14">
+          <p class="price2">8Bs</p> <h4>Fundas Protectoras</h4> 
+          <p>¡Cuida tus documentos! Nuestras fundas protectoras mantendrán tus papeles a salvo de cualquier daño.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/boligrafos.jpg" alt="Producto 15">
+          <p class="price2">15Bs</p> <h4>Bolígrafos</h4> 
+          <p>¡Escritura suave y fluida! Nuestros bolígrafos te ofrecen una experiencia de escritura única.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/tizas.jpg" alt="Producto 16">
+          <p class="price2">45Bs</p> <h4>Tizas blancas</h4> 
+          <p>¡Ideal para pizarras y superficies lisas! Nuestras tizas blancas son perfectas para tomar notas y hacer presentaciones.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/cuadernos.jpg" alt="Producto 17">
+          <p class="price2">45Bs</p> <h4>Cuadernos</h4> 
+          <p>¡Organiza tus ideas! Nuestros cuadernos te ofrecen el espacio perfecto para estudiar y desarrollar tus proyectos.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/pega.jpg" alt="Producto 18">
+          <p class="price2">30Bs</p> <h4>Pega</h4> 
+          <p>¡Une todo con fuerza! Nuestra pega es ideal para manualidades y proyectos escolares.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/cartulina-normal.jpg" alt="Producto 19">
+          <p class="price2">30Bs</p> <h4>Cartulina Normal</h4> 
+          <p>¡Dale un toque especial a tus creaciones! Nuestras cartulinas son perfectas para tarjetas, invitaciones y mucho más.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/Cartulina-plateada.png" alt="Producto 20">
+          <p class="price2">45Bs</p> <h4>Cartulina Metalica</h4> 
+          <p>¡Dale brillo a tus creaciones! Nuestras cartulinas son perfectas para tarjetas, invitaciones y mucho más.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <div class="producto2">
+          <img src="images/escarcha2.jpg" alt="Producto 21">
+          <p class="price2">45Bs</p> <h4>Escarcha</h4> 
+          <p>¡Añade un toque de brillo a tus creaciones! Nuestra escarcha está disponible en una variedad de colores.</p>
+          <a href="#contacto">Contactar</a>
+        </div>
+        <!-- Más productos en la categoría 2 -->
+      </div>
+    </div>
+
+    <!-- ---------TIENDA DE ROPA------------ -->
+    <div class="clothing-store">
+      <h3>👒 Tienda de Ropa 👕</h3>
+      <img src="images/clothing-store-coming-soon.jpg" alt="tienda de ropa">
+    </div>
+
+    <!-- Más categorías aquí -->
+  </section>
+
+  <!-- Información de contacto -->
+  <section id="contacto">
+    <div class="contact-text">
+      <h1>LA ZONA</h1> 
+      <h2>Contacto</h2>
+    </div>
+    <p class="contact-text-p">Para adquirir nuestros productos, contáctanos al teléfono <a href="tel:+584263650193">+58 426-3650193</a> o envíanos un correo a <a href="mailto:cyberthelado@gmail.com">cyberthelado@gmail.com</a>. <br>Estamos ubicados en: <a href="https://maps.app.goo.gl/m6CtnF2xePykvRkw8" target="_blank">Antiguo Mambo Cafe, Planta alta, Centro Comercial Mene Grande, Av. Independencia, Mene Grande 4015, Edo. Zulia</a></p>
+
+    
+  </section>
+
+  <script src="script.js"></script> <!--CARGAR SCRIPT javascript-->
+</body>
+</html>

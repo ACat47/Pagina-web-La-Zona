@@ -110,3 +110,41 @@ sliderContainer2.addEventListener("mouseleave", () => {
   sliderContainer2.classList.remove("active");
 });
 
+//COMPORTAMIENTO DEL MODAL-------------------------------------------------------------------------
+
+//variables
+const reservationButton = document.getElementById('reservationButton');
+const reservationModal = document.getElementById('reservationModal');
+const closeModal = document.querySelector('.close');
+
+// Abrir modal
+reservationButton.addEventListener('click', () => {
+  reservationModal.style.display = 'block';
+});
+
+// Cerrar modal
+closeModal.addEventListener('click', () => {
+  reservationModal.style.display = 'none';
+});
+
+// Cerrar modal al hacer clic fuera de él
+window.addEventListener('click', (event) => {
+  if (event.target === reservationModal) {
+      reservationModal.style.display = 'none';
+  }
+});
+
+
+// REQUERIMIENTO DE EMAIL O TELEFONO---------------------------------------------------
+
+const emailInput = document.getElementById('email');
+const telefonoInput = document.getElementById('phone');
+
+reservationModal.addEventListener('submit', (event) => {
+  if (!emailInput.value && !telefonoInput.value) {
+    event.preventDefault();
+    alert('Por favor, ingresa tu correo electrónico o tu número de teléfono para recibir información acerca de su reservación.');
+  }
+});
+
+

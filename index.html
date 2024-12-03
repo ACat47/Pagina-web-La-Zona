@@ -125,6 +125,46 @@
         </div>
         
       </div>
+
+      <button id="reservationButton" class="boton">Hacer reservación</button>
+
+      <!-- Modal para el formulario -->
+      <div id="reservationModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <form action="https://formspree.io/f/mkgnkekk" method="POST">
+                  <h2>Reservación de consola</h2>
+                  <hr>
+                  <h3>Agregue sus datos y haga su reservación </h3>
+                  
+                  <label for="email-tel">Correo electrónico o Teléfono:</label>
+                  <input type="email" id="email" name="email-tel" placeholder="ejemplo@email.com">
+                  <input type="tel" id="phone" name="email-tel" placeholder="+58 412 1234567">
+
+                  <label for="name">Nombre:</label>
+                  <input type="text" id="name" name="name" placeholder="Requerido" required>
+                  
+                  <label for="last-name">Apellido:</label>
+                  <input type="text" id="last-name" name="last-name" placeholder="Opcional">
+
+                  <label for="console">Elige una consola:</label>
+                  <select id="console" name="console" required>
+                      <option value="PS5">PlayStation 5</option>
+                      <option value="PS4">Playstation 4</option>
+                      <option value="Nintendo Switch">Nintendo Switch</option>
+                  </select>
+
+                  <label for="hours">Horas de alquiler:</label>
+                  <input type="number" id="hours" name="hours" min="1" max="12" required>
+
+                  <label for="time">Selecciona una hora de llegada (8:00 AM - 6:00 PM):</label>
+                  <input type="time" id="time" name="time" min="08:00" max="18:00" required>
+
+                  <button type="submit" class="boton">Enviar reservación</button>
+              </form>
+          </div>
+      </div>
+
     </div>
     
     <!-- Categoría 1 (HELADOS)-->
@@ -419,7 +459,7 @@
       <h1>LA ZONA</h1> 
       <h2>Contacto</h2>
     </div>
-    <p class="contact-text-p">Para adquirir nuestros productos, contáctanos al teléfono <a href="tel:+584263650193">+58 426-3650193</a> o envíanos un correo a <a href="mailto:cyberthelado@gmail.com">cyberthelado@gmail.com</a>. <br>Estamos ubicados en: <a href="https://maps.app.goo.gl/m6CtnF2xePykvRkw8" target="_blank">Antiguo Mambo Cafe, Planta alta, Centro Comercial Mene Grande, Av. Independencia, Mene Grande 4015, Edo. Zulia</a></p>
+    <p class="contact-text-p">Para adquirir nuestros productos, contáctanos al teléfono <a href="https://wa.me/584263650193?text=Hola%2C%20estoy%20interesado%20en%20sus%20productos" target="_blank">+58 426-3650193</a> o envíanos un correo a <a href="mailto:cyberthelado@gmail.com">cyberthelado@gmail.com</a>. <br>Estamos ubicados en: <a href="https://maps.app.goo.gl/m6CtnF2xePykvRkw8" target="_blank">Antiguo Mambo Cafe, Planta alta, Centro Comercial Mene Grande, Av. Independencia, Mene Grande 4015, Edo. Zulia</a></p>
 
     
   </section>

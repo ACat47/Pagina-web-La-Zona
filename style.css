@@ -246,7 +246,7 @@
     right: 10px; /* Coloca la flecha derecha en el borde derecho de la pantalla */
   }
 
-  /* Productos de alquiler */
+  /* ---------------------------Productos de alquiler--------------------------- */
 
   .rental-products {
     text-align: center;
@@ -305,6 +305,82 @@
     }
   }
 
+
+  /*Estilo del modal */
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 10px;
+  }
+
+  .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+  }
+
+  form label {
+    display: block; /* Cada etiqueta ocupa toda la línea */
+    margin-bottom: 5px; /* Espacio entre el label y el input */
+  }
+
+  form input, 
+  form select, 
+  form button {
+      display: block; /* Cada elemento ocupa toda la línea */
+      text-align: center;
+      margin-bottom: 15px; /* Espacio entre los inputs y otros elementos */
+      width: 100%; /* Opcional: Ajusta el tamaño del input al contenedor */
+  }
+
+  .boton {
+    transition: box-shadow 0.3s ease;
+
+    background-color: #449fd3; /* Verde */
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+  
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+
+    margin: 4px 2px;
+  
+    cursor: pointer;
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+    
+    
+
+  }
+
+  .boton:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+  }
 
   /* TIENDA DE ROPA */
 

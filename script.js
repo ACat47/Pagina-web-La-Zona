@@ -19,7 +19,7 @@ function autoSlide() {
   autoSlideInterval = setInterval(() => {
     currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
     updateCarousel();
-  }, 8000); // Cambia de producto cada 5 segundos
+  }, 5000); // Cambia de producto cada 5 segundos
 }
 
 // Detener el avance automático al interactuar con las flechas

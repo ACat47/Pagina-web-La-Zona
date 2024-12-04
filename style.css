@@ -5,7 +5,7 @@
     box-sizing: border-box;
   }
   
-  /*REDES */
+  /*-------------------REDES ------------------------------------------------------------------*/
   .redes {
     display: flex;
     text-align: right;
@@ -34,7 +34,7 @@
     color: #06f154;
   }
 
-  /*CUERPO DE PAGINA */
+  /*---------------------------CUERPO DE PAGINA -------------------------*/
 
   html {
     font-size: 16px;
@@ -166,7 +166,7 @@
 
   .featured-product h3 {
     font-weight: 300;
-    font-size: 2.2vw;
+    font-size: 30px;
     color: #445a67;
     font-style: normal;
     text-shadow: 0px 0px 18px #72727265;
@@ -174,14 +174,14 @@
   
   .featured-product p {
     font-weight: 250;
-    font-size: 1.8vw;
-    font-size: auto;
+    font-size: 22px;
+
     font-style: normal;
     text-shadow: 0px 0px 24px #00000086;
   }
 
   .featured-product a {
-    font-size: 2vw;
+    font-size: 24px;
   }
 
   .featured-product a:hover {
@@ -251,8 +251,8 @@
   .rental-products {
     text-align: center;
     margin-bottom: 1.5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding-top: 80px;
   }
 
@@ -298,13 +298,9 @@
     transform: scale(1.2);
   }
 
-  /* Ajuste para pantallas pequeñas */
-  @media (max-width: 600px) {
-    .container {
-      flex-direction: column; /* Cambia a disposición vertical */
-    }
-  }
+  
 
+  
 
   /*Estilo del modal */
 
@@ -382,22 +378,26 @@
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
   }
 
-  /* TIENDA DE ROPA */
-
+  /* ------------------------TIENDA DE ROPA----------------------- */
 
   .clothing-store {
     background-color: #f6f7fb;
-    padding: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
   }
 
   .clothing-store img{
-    max-width: 50%;
-    margin-left: 26%;
+    max-width: 60%;
+    margin-bottom: 1.2rem;
+    margin-left: 21%;
+    margin-right: 15%;
     max-height: auto;
     box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.226);
   }
 
-  /* Categorías */
+  /*------------------------ Categorías-------------------------- */
   #categorias {
     padding: 1rem;
   }
@@ -696,6 +696,42 @@
   }
 
 
+  /* Ajuste para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column; /* Cambia a disposición vertical */
+    }
+
+    .featured-product img {
+      width: 100%;
+      height: auto;
+    }
+
+    .clothing-store img{
+      max-width: 100%;
+      margin-bottom: 1.2rem;
+      margin-left: 0%;
+      margin-right: 0%;
+      max-height: auto;
+    }
+
+    .contact-text {
+      display: block; /* Convertir el contenedor en un contenedor flex */
+    }
+
+    .contact-text-p {
+      padding-left: 0px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .individual-product {
+      transform: scale(0.9);
+    }
+    .individual-product:hover {
+      transform: scale(1.0);
+  } 
+  }
 
   /*
   .carousel-arrow {

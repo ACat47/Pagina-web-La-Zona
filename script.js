@@ -1,5 +1,57 @@
 //CARRUSEL DE PRODUCTOS DESTACADOS
+
+
 const carouselTrack = document.querySelector(".carousel-track");
+const leftArrow = document.querySelector(".left-arrow");
+const rightArrow = document.querySelector(".right-arrow");
+
+let currentIndex = 0;
+const totalItems = document.querySelectorAll(".carousel-track .featured-product").length;
+let autoSlideInterval; // Variable para guardar el intervalo
+
+function updateCarousel() {
+  const width = carouselTrack.clientWidth;
+  carouselTrack.style.transform = `translateX(-${currentIndex * width}px)`;
+}
+
+// Función para avanzar automáticamente el carrusel
+function autoSlide() {
+  autoSlideInterval = setInterval(() => {
+    currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
+    updateCarousel();
+  }, 8000); // Cambia de producto cada 5 segundos
+}
+
+// Detener el avance automático al interactuar con las flechas
+function stopAutoSlide() {
+  clearInterval(autoSlideInterval);
+}
+
+// Listeners para las flechas
+leftArrow.addEventListener("click", () => {
+  stopAutoSlide(); // Detiene el avance automático
+  currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
+  updateCarousel();
+  autoSlide(); // Reinicia el autoavance
+});
+
+rightArrow.addEventListener("click", () => {
+  stopAutoSlide(); // Detiene el avance automático
+  currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
+  updateCarousel();
+  autoSlide(); // Reinicia el autoavance
+});
+
+// Ajusta el carrusel en caso de redimensionar la ventana
+window.addEventListener("resize", updateCarousel);
+
+// Inicia el autoavance cuando la página carga
+updateCarousel();
+autoSlide();
+
+//CODIGO ANTIGUO DE CARRUSEL ESTÁTICO--------------------------------------------------
+
+/*const carouselTrack = document.querySelector(".carousel-track");
 const leftArrow = document.querySelector(".left-arrow");
 const rightArrow = document.querySelector(".right-arrow");
 
@@ -24,7 +76,7 @@ rightArrow.addEventListener("click", () => {
 // Ajusta el carrusel en caso de redimensionar la ventana
 window.addEventListener("resize", updateCarousel);
 
-
+------------------------------------*/
 
 //Script de Slider de productos---------------------------------------------------------------------
 
